@@ -9,4 +9,4 @@ docker build -t smart-video-cropper .
 
 # Exécuter le conteneur
 echo "🚀 Lancement du conteneur..."
-docker run -v "$(pwd)/videos:/app/videos" smart-video-cropper
+docker run --rm -v "$(pwd)/videos:/app/videos" smart-video-cropper
