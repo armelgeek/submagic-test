@@ -509,8 +509,9 @@ def main():
     cropper = SmartVideoCropper()
 
     # Configuration
-    input_video = "input_video.mp4"
-    output_video = "smart_cropped_video.mp4"
+    videos_dir = "videos"  # Dossier contenant les vidéos
+    input_video = os.path.join(videos_dir, "input_video.mp4")
+    output_video = os.path.join(videos_dir, "smart_cropped_video.mp4")
 
     # Options avancées
     sample_rate = 2  # Plus précis mais plus lent
